@@ -8,8 +8,8 @@ For Notebook 1 & 2, use
 ```
 conda create -n uc1demo python=3.10 gdal cartopy -c conda-forge
 conda activate uc1demo
-pip install -r requirements.txt
-pip install earthnet-minicuber
+pip install -r requirements.txt --index-url https://download.pytorch.org/whl/cpu
+pip install scipy matplotlib seaborn netCDF4 xarray zarr dask shapely pillow pandas s3fs dask s3fs folium fsspec boto3 psycopg2 pystac-client stackstac planetary-computer rasterio[s3] rioxarray odc-algo segmentation-models-pytorch folium ipykernel ipywidgets sen2nbar earthnet-minicuber
 # Install Hopsworks + Hopsworks Python Package
 ```
 
